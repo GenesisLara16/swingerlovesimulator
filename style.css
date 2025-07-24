@@ -1,0 +1,703 @@
+/*------- General styles ---------*/
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    background-image: url(img/fondo\ negro\ y\ rojo.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    color:#ccc;
+}
+
+/*---------- header menú---------- */
+.menu-header {
+    text-align: center;
+    padding: 20px 0;
+}
+
+/*-------- Logo------------- */
+.logo-container {
+    display: flex;
+    justify-content: center;
+}
+
+.logo-image {
+    width: 150px;
+    padding-right: 20px;
+    margin-left: 20px;
+}
+
+
+/*--------- Navegation menú--------------- */
+
+#collapsibleNavbar{
+    justify-content: right;
+    margin-right: 50px;
+}
+.nav-menu {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 80px;
+}
+
+.nav-menu li {
+    position: relative;
+}
+
+.nav-menu a {
+    text-decoration: none;
+    color: #ccc; 
+    font-size: 13px;
+    font-weight: normal;
+    padding: 10px;
+    transition: color 0.4s ease;
+}
+
+/*-------- Underlined on active link -----------*/
+.nav-menu a:hover {
+    color: #de0404; 
+}
+
+.nav-menu li:hover::after {
+    content: "";
+    display: block;
+    width: 100%;
+    height: 1px;
+    background-color: #de0404;
+    position: absolute;
+    left: 0;
+    transition: width 0.3s ease;
+}
+
+/*-------------mainprincipalhome-------------*/
+.maincontent {
+    max-width: 1200px;
+    margin: 0px auto;
+    padding-top: 10px;
+}
+
+.principal img {
+    width: 100%;
+    max-height: 400px;
+    margin-bottom: 20px;
+    border-radius: 2px;
+}
+
+/*------------containertwohome------------*/
+.container {
+    display: flex;
+    align-items: center;
+}
+
+.text-container1{
+    max-width: 50%;
+}
+
+.text-container1 h1 {
+    color: #ccc;
+    text-align: center;
+    font-size: 25px;
+    background-color: #4c040482;
+    margin-inline: 20%;
+}
+
+.container h2 {
+    color: #ccc;
+    font-size: 14px;
+    background-color: #4c040482;
+}
+
+.container p {
+    text-align: justify;
+    background-color: #0b0b0b;
+    border-radius: 3px;
+    padding: 9px;
+    box-shadow: 2px 2px 11px #580101;
+}
+
+.secondary {
+    display: flex;
+    width: 50%;
+    padding-top: 34px;
+}
+
+.secondary img {
+    width: 100%;
+    padding-left: 10px;
+    border-radius: 2px;
+}
+
+.section-item{
+    width: 50%;
+}
+
+.secondary h2 {
+    color: #ccc;
+    margin-top: 10px;
+    font-size: 20px;
+    text-align: center;
+    background-color: #4c040482;
+    margin-inline: 20%;
+}
+
+.secondary p {
+    margin-inline: 10px;
+    text-align: justify;
+}
+
+/**--------main destinations-------------**/
+.maindestinations h1 {
+    font-size: 26px;
+    color: #ccc;
+    text-align: center;
+    background-color: #4c040482;
+    margin-inline: 32%;
+    
+}
+
+.maindestinations p {
+    margin-left: 15%;
+    margin-right: 15%;
+    padding-top: 10px;
+    text-align: justify;
+    font-size: 14px;
+}
+
+/**--------------destinations-card------------**/
+.destinations-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px; 
+    padding: 20px; 
+    max-width: 1200px; 
+    margin-left: 70px; 
+}
+
+.destinations-card h2 {
+    color: #ccc;
+    text-align: center;
+    background-color: #4c040482;
+    margin-right: 75px;
+}
+
+
+.destinations-card img {
+    width: 300px; 
+    height: 300px; 
+    margin: 10px 0; 
+    transition: 0.4s
+}
+
+.destinations-card img:hover {
+    transform: scale(1.1, 1.1);
+}
+
+.destinations-card p {
+    text-align: justify;
+    font-size: 13px;
+    padding-top: 20px;
+    margin: 0px;
+    margin-right: 72px;
+    background-color: #0b0b0b;
+    border-radius: 3px;
+    padding: 9px;
+    box-shadow: 2px 2px 11px #580101;
+}
+
+/*---------events card principal----------------*/
+.content h1 {
+    font-size: 26px;
+    color: #ccc;
+    text-align: center;
+    background-color: #4c040482;
+    margin-inline: 35%;
+}
+
+.content p {
+    margin-left: 15%;
+    margin-right: 15%;
+    text-align: justify;
+    font-size: 14px;
+    padding-top: 10px;
+}
+
+/**--------------Events card------------**/
+.event_cards {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px; 
+    padding: 20px; 
+    max-width: 1200px; 
+    margin-left: 70px; 
+}
+
+.cards h2 {
+    color: #ccc;
+    text-align: center;
+    background-color: #4c040482;
+    margin-right: 75px;
+}
+
+
+.cards img {
+    width: 300px; 
+    height: 300px; 
+    margin: 10px 0; 
+    transition: 0.4s
+}
+
+.cards img:hover {
+    transform: scale(1.1, 1.1);
+}
+
+.cards p {
+    text-align: justify;
+    font-size: 13px;
+    padding-top: 20px;
+    margin: 0px;
+    margin-right: 72px;
+    background-color: #0b0b0b;
+    border-radius: 3px;
+    padding: 9px;
+    box-shadow: 2px 2px 11px #580101;
+}
+
+/*------- events car sections two--------*/
+.contentwo {
+    padding: 20px;
+}
+
+.page_bottom {
+    display: flex; 
+    align-items: center;
+}
+
+.imagenevents img {
+    max-width: 480px;
+    width: 340px; 
+    height: auto; 
+    margin-left: 123px;
+    border-radius: 50%;
+    margin-top: 40px;
+}
+
+.textevents {
+    max-width: 600px;
+    text-align: justify;
+}
+
+h3 {
+    font-size: 1.8rem;
+    margin-bottom: 10px;
+    color: #ccc;
+    text-align: center;
+}
+
+.textevents p {
+    margin-bottom: 15px;
+    margin-left: 12px;
+    background-color: #0b0b0b;
+    border-radius: 3px;
+    padding: 9px;
+    box-shadow: 2px 2px 11px #580101;
+}
+/*-------end events---------------*/
+
+/*------------galery------------*/
+.photo h1{
+    text-align: center;
+    font-size: 26px;
+    color: #ccc;
+    background-color: #4c040482;
+    margin-inline: 28%;
+}
+
+.photo p{
+    margin-left: 15%;
+    margin-right: 15%;
+    padding-top: 10px;
+    text-align: justify;
+    font-size: 14px;
+}
+
+.img-galery{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    max-width: 40%;
+}
+
+/*----------end galery------------*/
+
+/*-----------shop--------------*/
+.shopmain h1{
+    text-align: center;
+    font-size: 26px;
+    color: #ccc;
+    background-color: #4c040482;
+    margin-inline: 32%;
+}
+
+.shopmain P{
+    margin-left: 15%;
+    margin-right: 15%;
+    padding-top: 10px;
+    text-align: justify;
+    font-size: 14px;
+}
+
+.tarjeta{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding-top: 20px;
+}
+
+.tarjeta h5{
+    text-align: center;
+    color: #ccc;
+    background-color: #4c040482;
+}
+
+.tarjeta p{
+    text-align: left;
+    color: #ccc;
+    box-shadow: 2px 2px 8px #580101;
+    padding-top: 10px;
+    font-size: 10px;
+}
+
+.card-body{
+    background-color: rgb(21, 21, 21);
+}
+
+.buttons {
+    background-color: #4c040482;
+    border: #0b0b0b;
+}
+
+.buttons:hover{
+    background-color: #7d0000;
+    color: white;
+}
+
+.buttons:active{
+    background-color: #7d0000 !important;
+}
+
+/*------------end tarjeta-----------------*/
+
+/*----------archivo link de tienda------------*/
+.storelenceriam{
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    padding-top: 15px;
+}
+
+.storelenceriam img{
+    width: 150px;
+}
+
+.mainlenc{
+    color: #ccc;
+    text-align: center;
+}
+
+.mainlenc h2{
+    background-color: #4c040482;
+    display: inline-block;
+    padding: 5px 40px;
+}
+
+.mainlenc p{
+    margin-left: 15%;
+    margin-right: 15%;
+    padding-top: 10px;
+    text-align: justify;
+    font-size: 14px;
+}
+
+/*----------end archivo link de tienda------------*/
+
+/*------formulari-------*/
+.emoji{
+    text-align: center;
+    font-size: 50px;
+}
+
+.form{
+    max-width: 500px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.form-control{
+    border: none;
+    background: none;
+    border-bottom: 1px solid;
+}
+
+#btn{
+    margin-top: 15px;
+    margin-bottom: 15px;
+    box-shadow: 3px 3px 11px #580101;
+}
+
+/*----------end formulari-------*/
+
+/*------------footer-------------*/
+.footer-principal {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: black;
+    height: 100px;
+}
+
+.footer-container p{
+    font-size: 12px;
+}
+
+.redes-logo{
+    display: flex;
+    gap: 15px;
+    font-size: 20px;
+}
+
+/*------------End footer---------*/
+
+/*----media querie-------*/
+
+@media (max-width: 768px) {
+/*-----navmenu media queries------*/
+    .navbar-brand img{
+        width: 80px;
+        margin-top: 0;
+    }
+
+    .nav-menu {
+        gap: 0px;
+        align-items: center;
+        background-color: #080808ed;
+        margin: auto;
+        position: absolute;
+        width: 100%;
+    }   
+
+/*--------home principal media queries------*/    
+    
+    .principal img {
+        max-height: 300px;
+    }
+
+    
+    .container {
+        flex-direction: column;
+        max-width: 100%;
+    }
+
+    .text-container1 {
+        max-width: 100%;
+    }
+
+    .secondary {
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+    }
+
+    .section-item {
+        width: 100%;
+    }
+
+    .secondary img {
+        max-width: 100%;
+        padding-left: 0px;
+    }
+
+    /*-----media queries destinations------*/
+        .maindestinations h1 {
+            margin-inline: 15%;
+        }
+
+        .maindestinations p {
+            text-align: justify;
+            margin: 40px;
+        }
+
+        .destinations-container {
+            display: block;
+            text-align: center;
+        }
+
+        .destinations-card img {
+            margin-right: 60px;
+        }
+
+        .destinations-card p {
+            margin-left: 20px;
+            margin-right: 80px;
+            padding-top: 10px;
+        }
+
+        .destinations-card h2 {
+            margin-right: 10%;
+            margin-top: 15px;
+            margin-left: 0%;
+        }
+
+    /*-----media queries events------*/
+        .content h1 {
+            margin-inline: 15%;
+        }
+
+        .content p {
+            text-align: justify;
+            margin: 40px;
+        }
+
+        .event_cards {
+            display: block;
+            text-align: center;
+        }
+
+        .cards h2 {
+            margin-right: 17%;
+            margin-top: 20px;
+            margin-left: 50px;
+        }
+
+        .cards img {
+            margin-right: 60px;
+        }
+
+        .cards p {
+            margin-left: 20px;
+            margin-right: 80px;
+            padding-top: 10px;
+        }
+
+        .page_bottom {
+            display: block;
+            margin: 35px;
+        }
+
+        .imagenevents img {
+            margin-left: 20%;
+            margin-top: auto;
+        }
+
+        /*------media queries events-----*/
+
+        .tarjeta {
+            display: grid;
+            justify-content: center;
+            gap: 20px;
+        }
+
+        /*-------media queries galery------*/
+
+        .photo h1 {
+            margin-inline: 15px;
+        }
+
+        /*-----media queries shop woman----*/
+        .storelenceriam {
+            display: flex;
+            gap: 20px;
+            padding-top: 15px;
+            flex-wrap: wrap;
+            align-content: center;
+            margin-left: 11%;
+            margin-right: 11%;
+        }
+
+
+        /*-----media queries footer-----*/
+
+    .footer-principal {
+        flex-direction: column; 
+        text-align: center;
+    }
+
+    .footer-container p {
+        margin-bottom: 15px;
+    }
+
+    .redes-logo {
+        justify-content: center; 
+        padding-bottom: 15px;
+    }
+
+    .redes-logo i {
+        font-size: 20px; 
+    }
+
+}
+
+@media (max-width: 480px) {
+    
+    .nav-menu a {
+        font-size: 12px;
+    }
+
+    .text-container1 h1 {
+        font-size: 20px;
+        margin-inline: 10%;
+    }
+
+    .secondary h2 {
+        font-size: 18px;
+    }
+
+    .secondary img {
+        max-width: 100%;
+    }
+
+    /*--------media queries destinations----*/
+        .destinations-card h2 {
+        margin-right: 17%;
+        margin-top: 15px;
+        margin-left: 1%;
+    }
+
+    .destinations-card p {
+        margin-block: 10px;
+    }
+
+    /*-------media queries events---------*/
+    .imagenevents img {
+        margin-left: 13px;
+    }
+
+    .cards h2 {
+        margin-left: auto;
+    }
+
+    .textevents h3 {
+        font-size: 20px;
+        margin-left: 13px;
+    }
+
+    /*------ media queries shop--------*/
+    .shopmain h1 {
+        margin-inline: 15%;
+    }
+
+    .tarjeta {
+    display: grid;
+    justify-content: center;
+    gap: 20px;
+    margin-block: 20px;
+}
+
+/*--------media queries galery-------*/
+.photo h1 {
+    font-size: 20px;
+    margin-inline: 40px;
+}
+
+}
